@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+    <title>Gerador de Assinaturas</title>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/jquery.inputmask.bundle.min.js" integrity="sha512-VpQwrlvKqJHKtIvpL8Zv6819FkTJyE1DoVNH0L2RLn8hUPjRjkS/bCYurZs0DX9Ybwu9oHRHdBZR9fESaq8Z8A==" crossorigin="anonymous" referrerpolicy="no"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+    <link rel="shortcut icon" type="image/png" href="https://s3.amazonaws.com/movidesk-files/3BE38AB04A9092E099FE7AB830509B96">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body>
+    <div align="center" class="texto">
+        <table width="100%" height="100%" border="0" cellpadding="3" cellspacing="5">
+            <tr>
+                <td><br>
+                    <br>
+                    <div align="center" class="texto" style="font-family: Montserrat;"><img src="https://sistemainfo.com.br/share/brand-book/logotipo/sistema-info-simbolo-oficial.png" width="85px" height="130px"><br>
+                            <br>
+                            <br>
+                            <div style="font-weight: bold;font-size: 15px;">Sistema Informática Empresarial</div>
+                            <div style="font-size: 10px;">Sistema para gerar sua assinatura personalizada.</div><br>
+                            Insira as informações solicitadas abaixo:<br />
+                    </div>
+                    <div class="form">
+                        <form method="POST" action="geracodigo.php">
+                            <table class="table" width="400" align="center" cellpadding="20" cellspacing="10">
+                                <tr>
+                                    <td width="76" height="15"  style="vertical-align:middle;">
+                                        <strong>Nome:</strong>
+                                    </td>
+                                    <td width="224"><input name="nome" type="text" id="nome" size="35" class="input"
+                                            required style="font-size:12px;" >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td  style="vertical-align:middle;">
+                                        <strong>Departamento:</strong>
+                                    </td>
+                                    <td><input name="departamento" type="text" id="departamento" size="35" class="input"
+                                            required style="font-size:12px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td  style="vertical-align:middle;">
+                                        <strong>WhatsApp<strong><br>
+                                        <span style="font-size:9px;">se não tiver deixe esse</span>
+                                    </td>
+                                    <td><input name="celular" type="text" id="celular" size="35" class="input"
+                                            value="4821016770"style="font-size:12px;"> </td>
+                                </tr>
+                                <tr>
+                                    <td height="20"></td>
+                                    <td align="right" ><input height="20" type="submit" name="Submit" class="button is-success" value="Gerar" > </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+<footer style="text-align: center;margin-right:10px;font-size:9px">
+    Powered by <strong>Sistema Info - EAC/EAT</strong>  @ all rights reserved ;)
+</footer>
+
+</html>
